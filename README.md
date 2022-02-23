@@ -41,15 +41,13 @@ Developed by [Triopsi](https://triopsi-hosting.com)
 Nothing yet.
  
 ## Screenshots
-
-1. Steps Design Flat
-2. Settings
-3. Steps Design Stairs
-4. Edit/Save Steps
- 
+<img src="assets/img/screenshot-1.png" width="550">
+<img src="assets/img/screenshot-2.png" width="550">
+<img src="assets/img/screenshot-3.png" width="550">
+<img src="assets/img/screenshot-4.png" width="550"> 
 ## Changelog
 
-= 1.0.0 =
+# 1.0.0
 * First release.
 
 ## Upgrade Notice
