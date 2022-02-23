@@ -1,0 +1,106 @@
+/**
+* Front CSS
+**/
+.th-step {
+    position: relative;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-right: -.9375rem;
+    margin-left: -.9375rem;
+}
+.th-step-title {
+    display: block;
+    color: #1e2022;
+    font-weight: 600
+}
+.th-step .th-step-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
+    margin-bottom: 1.5rem;
+}
+.th-step .th-step-content-wrapper {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.th-step .th-step-icon {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.th-step .th-step-icon::after {
+    position: absolute;
+    top: 3.59375rem;
+    left: 1.5625rem;
+    height: calc(100% - 2.65625rem);
+    border-left: .125rem solid #0b439e;
+    content: "";
+}
+.th-step-item-between .th-step-item:last-child {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto
+}
+.th-step-item:last-child .th-step-icon::after {
+    display: none
+}
+
+@media (min-width: 768px){
+    .th-step-md.th-step-centered {
+        text-align: center;
+    }
+    .th-step-md .th-step-item {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-bottom: 0;
+    }
+    .th-step-md:not(.th-step-inline) .th-step-content-wrapper {
+        display: block;
+    }
+    .th-step-md.th-step-centered .th-step-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .th-step-md .th-step-icon {
+        margin-bottom: 1rem;
+    }
+    .th-step-md.th-step-centered .th-step-icon::after {
+        width: calc(100% - 3.125rem);
+        left: calc(50% + 2.5rem);
+    }
+    .th-step-md .th-step-icon::after {
+        top: 1.5625rem;
+        left: 4.0625rem;
+        width: calc(100% - 4.0625rem);
+        height: 1.0625rem;
+        border-top: .125rem solid #0b439e;;
+        border-left: none;
+    }
+}
