@@ -55,12 +55,12 @@ function thsteps_add_service_url_display( $post ) {
 	$serviceurlpageid = (int) get_post_meta( $post->ID, '_thsteps_service_url_page_id', true );
 	$serviceurlpostid = (int) get_post_meta( $post->ID, '_thsteps_service_url_post_id', true );
 	$serviceurllink   = get_post_meta( $post->ID, '_thsteps_service_url_link', true );
-	$url_text   = get_post_meta( $post->ID, '_thsteps_service_url_link_text', true );
+	$url_text         = get_post_meta( $post->ID, '_thsteps_service_url_link_text', true );
 
 	$serviceurlpageid = ( empty( $serviceurlpageid ) ) ? 0 : $serviceurlpageid;
 	$serviceurlpostid = ( empty( $serviceurlpostid ) ) ? 0 : $serviceurlpostid;
 	$serviceurllink   = ( empty( $serviceurllink ) ) ? '' : $serviceurllink;
-	$url_text   = ( empty( $url_text ) ) ? '' : $url_text;
+	$url_text         = ( empty( $url_text ) ) ? '' : $url_text;
 
 	// Hidden field.
 	wp_nonce_field( 'thsteps_meta_box_nonce', 'thsteps_meta_box_nonce' );
@@ -184,13 +184,13 @@ function thsteps_save_meta_box_data( $post_id ) {
 	if ( ! isset( $_POST['thsteps_meta_box_nonce'] ) ) {
 		return;
 	}
-	if ( ! wp_verify_nonce( $_POST['thsteps_meta_box_nonce'], 'thsteps_meta_box_nonce' ) ) {
+	if ( ! wp_verify_nonce( wp_unslash( $_POST['thsteps_meta_box_nonce'] ), 'thsteps_meta_box_nonce' ) ) {
 		return;
 	}
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
-	if ( isset( $_POST['post_type'] ) && 'thsteps' == $_POST['post_type'] ) {
+	if ( isset( $_POST['post_type'] ) && 'thsteps' === $_POST['post_type'] ) {
 
 		if ( ! current_user_can( 'edit_page', $post_id ) ) {
 			return;
@@ -205,11 +205,11 @@ function thsteps_save_meta_box_data( $post_id ) {
 		return;
 	}
 
-	// Site Link
-	$service_url_page_id = stripslashes( strip_tags( sanitize_text_field( $_POST['thsteps_info_url_page_id'] ) ) );
-	$service_url_post_id = stripslashes( strip_tags( sanitize_text_field( $_POST['thsteps_info_url_post_id'] ) ) );
-	$service_url_link    = stripslashes( strip_tags( sanitize_text_field( $_POST['thsteps_info_url'] ) ) );
-	$service_url_link_text    = stripslashes( strip_tags( sanitize_text_field( $_POST['thsteps_info_url_text'] ) ) );
+	// Site Link.
+	$service_url_page_id   = stripslashes( strip_tags( sanitize_text_field( wp_unslash( $_POST['thsteps_info_url_page_id'] ) ) ) );
+	$service_url_post_id   = stripslashes( strip_tags( sanitize_text_field( wp_unslash( $_POST['thsteps_info_url_post_id'] ) ) ) );
+	$service_url_link      = stripslashes( strip_tags( sanitize_text_field( wp_unslash( $_POST['thsteps_info_url'] ) ) ) );
+	$service_url_link_text = stripslashes( strip_tags( sanitize_text_field( wp_unslash( $_POST['thsteps_info_url_text'] ) ) ) );
 
 	if ( $service_url_page_id != 0 ) {
 		update_post_meta( $post_id, '_thsteps_service_url_page_id', $service_url_page_id );
@@ -238,7 +238,7 @@ function thsteps_save_meta_box_data( $post_id ) {
 	update_post_meta( $post_id, '_thsteps_service_url_link_text', $service_url_link_text );
 
 	// Save Icon.
-	$serviceicon = stripslashes( strip_tags( sanitize_text_field( $_POST['thsteps_info_icon'] ) ) );
+	$serviceicon = stripslashes( strip_tags( sanitize_text_field( wp_unslash( $_POST['thsteps_info_icon'] ) ) ) );
 	update_post_meta( $post_id, '_thsteps_service_icon', $serviceicon );
 }
 
@@ -246,9 +246,12 @@ function thsteps_save_meta_box_data( $post_id ) {
 add_action( 'admin_init', 'thsteps_force_post_categ_init' );
 add_action( 'edit_form_advanced', 'thsteps_force_post_categ' );
 
+/**
+ * Support JQuery.
+ */
 function thsteps_force_post_categ_init() {
 
-	/* Gets the post type. */
+	// Gets the post type.
 	global $post_type;
 
 	if ( 'thsteps' == $post_type ) {
@@ -256,8 +259,11 @@ function thsteps_force_post_categ_init() {
 	}
 }
 
+/**
+ * Add JQuery.
+ */
 function thsteps_force_post_categ() {
-	/* Gets the post type. */
+	// Gets the post type.
 	global $post_type;
 
 	if ( 'thsteps' === $post_type ) {

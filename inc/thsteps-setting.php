@@ -45,7 +45,9 @@ function thsteps_settings_init() {
 	register_setting( 'thsteps', 'thsteps_settings_step_icon_color' );
 	register_setting( 'thsteps', 'thsteps_settings_additional_link_css_classes' );
 
-	/*********** Sections *************/
+	/**
+	 *  Sections.
+	 * */
 	// Font Awesome CDN Section.
 	add_settings_section(
 		'thsteps_settings_section_font_cdn',
@@ -62,8 +64,9 @@ function thsteps_settings_init() {
 		'thsteps'
 	);
 
-
-	/*********** FIELDS *************/
+	/**
+	 * FIELDS.
+	 * */
 	// Social Media Style CDN Field.
 	add_settings_field(
 		'thsteps_settings_cdn_awesome',
@@ -136,7 +139,7 @@ function thsteps_settings_field_cdn_cb() {
 function thsteps_settings_field_css_classes_cb() {
 	$old_setting_value = get_option( 'thsteps_settings_class_wrapper', '' );
 	?>
-	<input type="text" id="thsteps_settings_class_wrapper" name="thsteps_settings_class_wrapper" value="<?php echo $old_setting_value; ?>" />
+	<input type="text" id="thsteps_settings_class_wrapper" name="thsteps_settings_class_wrapper" value="<?php echo esc_html( $old_setting_value ); ?>" />
 	<?php
 }
 
@@ -159,7 +162,7 @@ function thsteps_settings_field_style_step_cb() {
 function thsteps_settings_field_css_classes_steps_cb() {
 	$old_setting_value = get_option( 'thsteps_settings_additional_step_css_classes', '' );
 	?>
-	<input type="text" id="thsteps_settings_additional_step_css_classes" name="thsteps_settings_additional_step_css_classes" value="<?php echo $old_setting_value; ?>" />
+	<input type="text" id="thsteps_settings_additional_step_css_classes" name="thsteps_settings_additional_step_css_classes" value="<?php echo esc_html( $old_setting_value ); ?>" />
 	<?php
 }
 
@@ -179,7 +182,7 @@ function thsteps_settings_field_icon_color_cb() {
 function thsteps_settings_field_css_classes_link_cb() {
 	$old_setting_value = get_option( 'thsteps_settings_additional_link_css_classes', 'btn btn-primary text-white' );
 	?>
-	<input type="text" id="thsteps_settings_additional_link_css_classes" name="thsteps_settings_additional_link_css_classes" value="<?php echo $old_setting_value; ?>" />
+	<input type="text" id="thsteps_settings_additional_link_css_classes" name="thsteps_settings_additional_link_css_classes" value="<?php echo esc_html( $old_setting_value ); ?>" />
 	<?php
 }
 

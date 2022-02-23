@@ -28,14 +28,18 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 
 delete_option( 'thsteps_plugin_version' );
 delete_option( 'thsteps_settings_cdn_awesome' );
-delete_option( 'thsteps_settings_cdn_bootstrap' );
-delete_option( 'thsteps_settings_design' );
+delete_option( 'thsteps_settings_class_wrapper' );
+delete_option( 'thsteps_settings_step_style' );
+delete_option( 'thsteps_settings_additional_step_css_classes' );
+delete_option( 'thsteps_settings_step_icon_color' );
+delete_option( 'thsteps_settings_additional_link_css_classes' );
 
 // Delete metadata and posts.
 $post_type_arg   = array(
 	'post_type'      => 'thsteps',
 	'posts_per_page' => -1,
 );
+
 $getpostsentries = get_posts( $post_type_arg );
 foreach ( $getpostsentries as $delpost ) {
 	wp_delete_post( $delpost->ID, true );

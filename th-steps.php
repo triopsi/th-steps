@@ -40,7 +40,6 @@ add_action( 'init', 'thsteps_load_plugin_textdomain' );
 // Add Admin Actions.
 require_once 'inc/thsteps-admin.php';
 require_once 'inc/thsteps-types.php';
-require_once 'inc/thsteps-help.php';
 require_once 'inc/thsteps-post-metabox.php';
 require_once 'inc/thsteps-setting.php';
 

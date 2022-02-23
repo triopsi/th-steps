@@ -65,7 +65,7 @@ function thsteps_load_scripts_css() {
 		// Load Font Awesome.
 		wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css', array(), THSTEPS_VERSION, 'all' );
 
-	}else {
+	} else {
 
 		// WP color picker Style and scripts.
 		wp_enqueue_style( 'wp-color-picker' );

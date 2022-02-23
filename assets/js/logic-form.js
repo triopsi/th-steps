@@ -1,7 +1,7 @@
 ;(function($){
     $(document).ready(function (){ 
 
-       //Function get icon from inputfield
+       // Function get icon from inputfield.
        function iconget(input){
             var reviewfield = $('.thiconReview');
             var inputVal = input.val();
@@ -11,10 +11,10 @@
             }
        }
 
-       //Init
+       // Init.
        iconget($('#thsteps-icon'));
 
-       //Change event on Field
+       // Change event on Field.
        $('#thsteps-icon').on('change',function(){
                 iconget($(this));
         });

@@ -1,7 +1,7 @@
 === TH Steps ===
 Contributors: triopsi
 Donate link: https://www.paypal.me/triopsi
-Tags: faq, questions, shortcode, post, site
+Tags: steps, step, shortcode, post, site
 Requires at least: 5.3
 Tested up to: 5.7
 Requires PHP: 5.4
@@ -14,7 +14,7 @@ A simple HTML stepper that works with categories and is also easy to use.
 == Description ==
 
 The "TH Steps" plugin is a very simple way of displaying steps, e.g. for a registration or shop on a website. It has an attractive design
-and is very easy to use. Copy the [thsteps] shortcode and paste it anywhere in your post or website to display a category's steps.
+and is very easy to use. Copy the [thsteps category=""] shortcode and paste it anywhere in your post or website to display a category's steps.
 
 = Create features =
  
@@ -42,9 +42,10 @@ Nothing yet.
  
 == Screenshots ==
 
-1. Steps Design
-2. Edit/Save Steps
-3. Manage Steps
+1. Steps Design Flat
+2. Settings
+3. Steps Design Stairs
+4. Edit/Save Steps
  
 == Changelog ==
 

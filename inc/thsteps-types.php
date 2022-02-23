@@ -56,13 +56,13 @@ function register_thsteps_type() {
 		'singular_name'      => __( 'Step', 'thsteps' ),
 		'menu_name'          => __( 'TH Steps', 'thsteps' ),
 		'name_admin_bar'     => __( 'TH Steps', 'thsteps' ),
-		'add_new'            => __( 'Add New Steps', 'thsteps' ),
-		'add_new_item'       => __( 'Add New Steps', 'thsteps' ),
+		'add_new'            => __( 'Add New Step', 'thsteps' ),
+		'add_new_item'       => __( 'Add New Step', 'thsteps' ),
 		'new_item'           => __( 'New Steps', 'thsteps' ),
 		'edit_item'          => __( 'Edit Steps', 'thsteps' ),
 		'view_item'          => __( 'View Steps', 'thsteps' ),
-		'all_items'          => __( 'All Stepss', 'thsteps' ),
-		'search_items'       => __( 'Search Stepss', 'thsteps' ),
+		'all_items'          => __( 'All Steps', 'thsteps' ),
+		'search_items'       => __( 'Search Steps', 'thsteps' ),
 		'not_found'          => __( 'No Stepss found.', 'thsteps' ),
 		'not_found_in_trash' => __( 'No Stepss found in Trash.', 'thsteps' ),
 	);
@@ -77,7 +77,7 @@ function register_thsteps_type() {
 		'capability_type'    => 'post',
 		'has_archive'        => false,
 		'hierarchical'       => false,
-		'supports'           => array( 'title', 'editor' ),
+		'supports'           => array( 'title', 'editor', 'page-attributes' ),
 		'menu_icon'          => 'dashicons-leftright',
 		'query_var'          => true,
 		'rewrite'            => false,
@@ -94,20 +94,20 @@ function register_thsteps_type() {
 function register_thsteps_taxonomy() {
 
 	$labels = array(
-		'name'                       => __( 'Steps Categories', 'thsteps' ),
-		'singular_name'              => __( 'Steps Category', 'thsteps' ),
-		'search_items'               => __( 'Search Steps categories', 'thsteps' ),
-		'all_items'                  => __( 'All Steps categories', 'thsteps' ),
-		'parent_item'                => __( 'Parent Steps Category', 'thsteps' ),
-		'parent_item_colon'          => __( 'Parent Steps Category:', 'thsteps' ),
-		'edit_item'                  => __( 'Edit Steps Category', 'thsteps' ),
-		'update_item'                => __( 'Update Steps Category', 'thsteps' ),
-		'add_new_item'               => __( 'Add New Steps Category', 'thsteps' ),
-		'new_item_name'              => __( 'New Steps Category Name', 'thsteps' ),
-		'separate_items_with_commas' => __( 'Separate Steps categories with commas', 'thsteps' ),
-		'add_or_remove_items'        => __( 'Add or remove Steps category', 'thsteps' ),
-		'choose_from_most_used'      => __( 'Choose from the most used Steps categories', 'thsteps' ),
-		'not_found'                  => __( 'No Steps category found.', 'thsteps' ),
+		'name'                       => __( 'Step Categories', 'thsteps' ),
+		'singular_name'              => __( 'Step Category', 'thsteps' ),
+		'search_items'               => __( 'Search Step categories', 'thsteps' ),
+		'all_items'                  => __( 'All Step categories', 'thsteps' ),
+		'parent_item'                => __( 'Parent Step Category', 'thsteps' ),
+		'parent_item_colon'          => __( 'Parent Step Category:', 'thsteps' ),
+		'edit_item'                  => __( 'Edit Step Category', 'thsteps' ),
+		'update_item'                => __( 'Update Step Category', 'thsteps' ),
+		'add_new_item'               => __( 'Add New Step Category', 'thsteps' ),
+		'new_item_name'              => __( 'New Step Category Name', 'thsteps' ),
+		'separate_items_with_commas' => __( 'Separate Step categories with commas', 'thsteps' ),
+		'add_or_remove_items'        => __( 'Add or remove Step category', 'thsteps' ),
+		'choose_from_most_used'      => __( 'Choose from the most used Step categories', 'thsteps' ),
+		'not_found'                  => __( 'No Step category found.', 'thsteps' ),
 		'menu_name'                  => __( 'Steps Categories', 'thsteps' ),
 	);
 
@@ -132,9 +132,9 @@ function register_thsteps_taxonomy() {
  * @return Array New Array with Message.
  */
 function thsteps_updated_messages( $messages ) {
-	$post              = get_post();
-	$post_type         = get_post_type( $post );
-	$post_type_object  = get_post_type_object( $post_type );
+	$post                = get_post();
+	$post_type           = get_post_type( $post );
+	$post_type_object    = get_post_type_object( $post_type );
 	$messages['thsteps'] = array(
 		1  => __( 'Steps updated.', 'thsteps' ),
 		4  => __( 'Steps updated.', 'thsteps' ),
