@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: TH Steps
- * Plugin URI: https://triopsi-hosting.com
+ * Plugin URI: https://github.com/triopsi/th-steps
  * Description: A simple HTML stepper that works with categories and is also easy to use.
  * Version: 1.0.0
  * Author: triopsi
