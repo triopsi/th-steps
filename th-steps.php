@@ -42,6 +42,7 @@ require_once 'inc/thsteps-admin.php';
 require_once 'inc/thsteps-types.php';
 require_once 'inc/thsteps-post-metabox.php';
 require_once 'inc/thsteps-setting.php';
+require_once 'inc/thsteps-help.php';
 
 // Shortcode.
 require_once 'inc/thsteps-shortcode.php';
@@ -52,5 +53,5 @@ require_once 'inc/thsteps-shortcode.php';
  * @return void
  */
 function thsteps_load_plugin_textdomain() {
-	load_plugin_textdomain( 'thsteps', '', 'th-faq/lang/' );
+	load_plugin_textdomain( 'thsteps', '', 'th-steps/lang/' );
 }

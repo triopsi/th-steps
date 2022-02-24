@@ -1,0 +1,377 @@
+# Copyright (C) 2022 triopsi
+# This file is distributed under the same license as the TH Steps plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: TH Steps 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/thsteps\n"
+"POT-Creation-Date: 2022-02-24T08:12:52+01:00\n"
+"PO-Revision-Date: 2022-02-24 08:16+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Domain: thsteps\n"
+
+#. Plugin Name of the plugin
+#: inc/thsteps-types.php:55 inc/thsteps-types.php:57 inc/thsteps-types.php:58
+msgid "TH Steps"
+msgstr "TH Steps"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://triopsi-hosting.com"
+msgstr "https://www.triopsi-hosting.com"
+
+#. Description of the plugin
+msgid ""
+"A simple HTML stepper that works with categories and is also easy to use."
+msgstr ""
+"Ein einfacher HTML-Leiter, das mit Kategorien arbeitet und auch einfach zu "
+"bedienen ist."
+
+#. Author of the plugin
+msgid "triopsi"
+msgstr "triopsi"
+
+#: inc/thsteps-help.php:40
+msgid "How It Works?"
+msgstr "Wie funktioniert es?"
+
+#: inc/thsteps-help.php:41 inc/thsteps-setting.php:252
+msgid "Help"
+msgstr "Hilfe"
+
+#: inc/thsteps-help.php:67
+msgid "How It Works - Display and shortcode"
+msgstr "Wie es funktioniert - Anzeigen und Shortcodes"
+
+#: inc/thsteps-help.php:74
+msgid "Getting Started with TH STEPS"
+msgstr "Erste Schritte mit TH STEPS"
+
+#: inc/thsteps-help.php:78
+msgid "Step 1. Go to \"Step Categories --> Add New Category\""
+msgstr ""
+"Schritt 1. Gehen Sie zu \"Stufen Kategorien --> Neue Kategorie hinzufügen\"."
+
+#: inc/thsteps-help.php:79
+msgid "Step 2. Go to \"All Steps --> Add New Step\""
+msgstr "Schritt 2. Gehen Sie zu \"Alle Stufen --> Neue Stufe hinzufügen\"."
+
+#: inc/thsteps-help.php:80
+msgid "Step 3. Insert a title and text, choose an icon and a link."
+msgstr ""
+"Schritt 3. Fügen Sie einen Titel und Text ein, wählen Sie ein Icon aus und "
+"einen Link."
+
+#: inc/thsteps-help.php:81
+msgid "Step 4. Choose a category and save the step."
+msgstr ""
+"Schritt 4. Wählen Sie eine Kategorie aus und speichern Sie den Schritt."
+
+#: inc/thsteps-help.php:82
+msgid ""
+"Step 5. Copy-paste the shortcode <span class=\"thsteps-shortcode-preview"
+"\">[thsteps category=\"&lt;slug-name&gt;\"]</span> anywhere in your post or "
+"site for show the stepper."
+msgstr ""
+"Schritt 5. Kopieren Sie den Shortcode <span class=\"thsteps-shortcode-"
+"preview\">[thsteps category=\"&lt;slug-name&gt;\"]</span> und fügen Sie ihn "
+"irgendwo in Ihrem Beitrag oder auf Ihrer Website ein, um den Stepper "
+"anzuzeigen."
+
+#: inc/thsteps-help.php:89
+msgid "All Shortcodes"
+msgstr "Alle Shortcodes"
+
+#: inc/thsteps-help.php:92
+msgid "show a single step"
+msgstr "zeigen einen einzelnen Schritt"
+
+#: inc/thsteps-help.php:93
+msgid "Show all steps from the category in a stepper"
+msgstr "Alle Schritte aus der Kategorie in einem Stepper anzeigen"
+
+#: inc/thsteps-help.php:99
+msgid "All Shortcodes parameters"
+msgstr "Alle Shortcodes Parameter"
+
+#: inc/thsteps-help.php:102
+msgid ""
+"orderby the atribute of steps Value=date, ID, title, name or rand, "
+"Default=date"
+msgstr ""
+"Reihenfolge nach dem Attribut der Schritte Value=date, IS, title, name oder "
+"rand, Default=date"
+
+#: inc/thsteps-help.php:103
+msgid ""
+"sort the teps in ascending or descending order. Value=asc or desc, "
+"Default=ASC"
+msgstr ""
+"Sortieren Sie die Schritte in aufsteigender oder absteigender Reihenfolge. "
+"Wert=asc oder desc, Standard=ASC"
+
+#: inc/thsteps-help.php:105
+msgid "e.g."
+msgstr "z.B."
+
+#: inc/thsteps-help.php:111
+msgid "Need Support?"
+msgstr "Hilfe gebraucht?"
+
+#: inc/thsteps-help.php:114
+msgid "Check plugin document for shortcode parameters."
+msgstr "Überprüfen Sie das Plugin Dokument auf Shortcode Parameter."
+
+#: inc/thsteps-help.php:115
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: inc/thsteps-help.php:116 inc/thsteps-setting.php:251
+msgid "Donate"
+msgstr "Spenden"
+
+#: inc/thsteps-post-metabox.php:33
+msgid "Service details"
+msgstr "Service details"
+
+#: inc/thsteps-post-metabox.php:40
+msgid "Service icon"
+msgstr "Service Icon"
+
+#: inc/thsteps-post-metabox.php:72
+msgid "More information URL"
+msgstr "Mehr Informationen URL"
+
+#: inc/thsteps-post-metabox.php:75
+msgid "Site"
+msgstr "Seite"
+
+#: inc/thsteps-post-metabox.php:82 inc/thsteps-post-metabox.php:97
+msgid "Please Choose"
+msgstr "Bitte wählen"
+
+#: inc/thsteps-post-metabox.php:91 inc/thsteps-post-metabox.php:118
+msgid "or"
+msgstr "oder"
+
+#: inc/thsteps-post-metabox.php:94
+msgid "Post"
+msgstr "Beitrag"
+
+#: inc/thsteps-post-metabox.php:123
+msgid "e.g. https://example.com"
+msgstr "z.B. https://example.com"
+
+#: inc/thsteps-post-metabox.php:128
+msgid "e.g. Link A"
+msgstr "z.B. Link A"
+
+#: inc/thsteps-post-metabox.php:130
+msgid "Empty Value = No Link"
+msgstr "Leerer Inhalt = Kein Link"
+
+#: inc/thsteps-post-metabox.php:149
+msgid "Icon name"
+msgstr "Iconnamen"
+
+#. translators: %s is replaced with the link
+#: inc/thsteps-post-metabox.php:157
+msgid ""
+"By default the plugin used and needed the font awesome icon libary (%s). "
+"Choose one and copy the name in this field."
+msgstr ""
+"Standardmäßig verwendet und benötigt das Plugin die Font Awesome Icon "
+"Library (%s). Wählen Sie ein Icon aus und kopieren Sie den Namen in dieses "
+"Feld."
+
+#: inc/thsteps-post-metabox.php:165
+msgid "Required fields"
+msgstr "Pflichtfeld"
+
+#: inc/thsteps-setting.php:73
+msgid "Use Font Awesome CDN?"
+msgstr "Benutze Font Awesome CDN?"
+
+#: inc/thsteps-setting.php:82
+msgid "Additional CSS classes for wrapper"
+msgstr "Zusätzliche CSS-Klassen für Wrapper"
+
+#: inc/thsteps-setting.php:91
+msgid "Style of the step"
+msgstr "Stil der Stufen"
+
+#: inc/thsteps-setting.php:100
+msgid "Additional CSS classes for steps"
+msgstr "Zusätzliche CSS-Klassen für Stufen"
+
+#: inc/thsteps-setting.php:109
+msgid "Icon Color"
+msgstr "Icon Farbe"
+
+#: inc/thsteps-setting.php:118
+msgid "Additional CSS classes for links"
+msgstr "Zusätzliche CSS-Klassen für Links"
+
+#: inc/thsteps-setting.php:132
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: inc/thsteps-setting.php:194
+msgid "Want to use the CDN for Font Awesome Icons?"
+msgstr "CDN für die Font Awesome Icon Bibliothek benutzen?"
+
+#: inc/thsteps-setting.php:201
+msgid "Style settings for steps."
+msgstr "Stileinstellungen für Stufen."
+
+#: inc/thsteps-setting.php:211 inc/thsteps-setting.php:212
+msgid "TH Steps Options"
+msgstr "TH Stufen Optionen"
+
+#: inc/thsteps-setting.php:242
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: inc/thsteps-setting.php:249
+msgid "Supports"
+msgstr "Hilfen"
+
+#: inc/thsteps-setting.php:259
+msgid "Debug information"
+msgstr "Debug Informationen"
+
+#: inc/thsteps-setting.php:260
+msgid "You are seeing this because your WP_DEBUG variable is set to true."
+msgstr ""
+"Du siehst diese Einstellungen, weil die WP_DEBU Variable auf true gesetzt "
+"worden ist."
+
+#: inc/thsteps-setting.php:268
+msgid "All Stepss"
+msgstr "Alle Stufen"
+
+#: inc/thsteps-types.php:56
+msgid "Step"
+msgstr "Stufe"
+
+#: inc/thsteps-types.php:59 inc/thsteps-types.php:60
+msgid "Add New Step"
+msgstr "Neue Stufe hinzufügen"
+
+#: inc/thsteps-types.php:61
+msgid "New Steps"
+msgstr "Neue Stufe"
+
+#: inc/thsteps-types.php:62
+msgid "Edit Steps"
+msgstr "Stufe bearbeiten"
+
+#: inc/thsteps-types.php:63
+msgid "View Steps"
+msgstr "Stufen anzeigen"
+
+#: inc/thsteps-types.php:64
+msgid "All Steps"
+msgstr "Alle Stufen"
+
+#: inc/thsteps-types.php:65
+msgid "Search Steps"
+msgstr "Suche Stufe"
+
+#: inc/thsteps-types.php:66
+msgid "No Steps found."
+msgstr "Keine Stufen gefunden."
+
+#: inc/thsteps-types.php:67
+msgid "No Steps found in Trash."
+msgstr "Keine Stufen im Mülleimer gefunden."
+
+#: inc/thsteps-types.php:97
+msgid "Step Categories"
+msgstr "Stufen Kategorien"
+
+#: inc/thsteps-types.php:98
+msgid "Step Category"
+msgstr "Stufen Kategorie"
+
+#: inc/thsteps-types.php:99
+msgid "Search Step categories"
+msgstr "Suche Stufen Kategorie"
+
+#: inc/thsteps-types.php:100
+msgid "All Step categories"
+msgstr "Alle Stufen Kategorien"
+
+#: inc/thsteps-types.php:101
+msgid "Parent Step Category"
+msgstr "Eltern Kategorie"
+
+#: inc/thsteps-types.php:102
+msgid "Parent Step Category:"
+msgstr "Eltern Kategorie:"
+
+#: inc/thsteps-types.php:103
+msgid "Edit Step Category"
+msgstr "Kategorie bearbeiten"
+
+#: inc/thsteps-types.php:104
+msgid "Update Step Category"
+msgstr "Kategorie bearbeiten"
+
+#: inc/thsteps-types.php:105
+msgid "Add New Step Category"
+msgstr "Neue Kategorie hinzufügen"
+
+#: inc/thsteps-types.php:106
+msgid "New Step Category Name"
+msgstr "Stufen Kategorie Namen"
+
+#: inc/thsteps-types.php:107
+msgid "Separate Step categories with commas"
+msgstr "Trennen Sie Kategorien durch Kommas"
+
+#: inc/thsteps-types.php:108
+msgid "Add or remove Step category"
+msgstr "Kategorie hinzufügen oder entfernen"
+
+#: inc/thsteps-types.php:109
+msgid "Choose from the most used Step categories"
+msgstr "Wählen Sie aus den am häufigsten verwendeten Stufen Kategorien"
+
+#: inc/thsteps-types.php:110
+msgid "No Step category found."
+msgstr "Keine Stufen Kategorie gefunden."
+
+#: inc/thsteps-types.php:111
+msgid "Steps Categories"
+msgstr "Stufen Kategorien"
+
+#: inc/thsteps-types.php:139 inc/thsteps-types.php:140
+msgid "Steps updated."
+msgstr "Stufe aktualisiert."
+
+#: inc/thsteps-types.php:141
+msgid "Steps published."
+msgstr "Stufe veröffentlicht."
+
+#: inc/thsteps-types.php:142
+msgid "Steps saved."
+msgstr "Stufe gespeichert."
+
+#: inc/thsteps-types.php:143
+msgid "Steps draft updated."
+msgstr "Stufen Entwurf aktualisiert."
+
+#: inc/thsteps-types.php:192 inc/thsteps-types.php:206
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: inc/thsteps-types.php:203
+msgid "Question"
+msgstr "Frage"

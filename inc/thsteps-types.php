@@ -63,8 +63,8 @@ function register_thsteps_type() {
 		'view_item'          => __( 'View Steps', 'thsteps' ),
 		'all_items'          => __( 'All Steps', 'thsteps' ),
 		'search_items'       => __( 'Search Steps', 'thsteps' ),
-		'not_found'          => __( 'No Stepss found.', 'thsteps' ),
-		'not_found_in_trash' => __( 'No Stepss found in Trash.', 'thsteps' ),
+		'not_found'          => __( 'No Steps found.', 'thsteps' ),
+		'not_found_in_trash' => __( 'No Steps found in Trash.', 'thsteps' ),
 	);
 
 	// Defines permissions.

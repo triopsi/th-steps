@@ -152,9 +152,9 @@ function thsteps_add_servoice_icon_display( $post ) {
 		</br>
 		<em>
 		<?php
-		/* translators: %s is replaced with the link */
 		printf(
-			__( 'By default the plugin used and needed the font awesome icon libary (%s). Choose one and copy the name in this field. Important! Without first css part (.fas).', 'thsteps' ),
+			/* translators: %s is replaced with the link */
+			__( 'By default the plugin used and needed the font awesome icon libary (%s). Choose one and copy the name in this field.', 'thsteps' ),
 			'<a target="_blank" href="https://fontawesome.com/">more infos</a>'
 		);
 		?>

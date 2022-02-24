@@ -29,7 +29,7 @@ Please give me feedback, contribute and file technical bugs on [GitHub Repositor
 
 = Credits =
 
-Developed by [Triopsi](https://triopsi-hosting.com)
+Developed by [Triopsi Hosting](https://triopsi-hosting.com)
 
 == Installation ==
  
