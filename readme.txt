@@ -1,6 +1,6 @@
 === TH Steps ===
 Contributors: triopsi
-Donate link: https://www.paypal.me/triopsi
+Donate link: https://www.paypal.me/triopsihosting
 Tags: steps, step, shortcode, post, site
 Requires at least: 5.3
 Tested up to: 5.7
